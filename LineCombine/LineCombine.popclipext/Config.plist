@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>AppleScript File</key>
+			<string>linecombine.applescript</string>
+			<key>Image File</key>
+			<string>linecombine.png</string>
+			<key>Title</key>
+			<string>Line Combine</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Combine selected lines into one.</string>
+	<key>Extension Identifier</key>
+	<string>com.trieuminhtien.popclip.extension.linecombine</string>
+	<key>Extension Name</key>
+	<string>LineCombine</string>
+	<key>Required Software Version</key>
+	<integer>701</integer>
+</dict>
+</plist>
