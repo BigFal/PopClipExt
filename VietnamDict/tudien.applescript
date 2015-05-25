@@ -5,6 +5,7 @@ repeat
 	if application "Vietnam Dictionaries" is running then exit repeat
 	delay 0.5
 end repeat
+delay 0.5
 tell application "System Events"
 	tell process "Vietnam Dictionaries"
 		perform action "AXRaise" of window 1
