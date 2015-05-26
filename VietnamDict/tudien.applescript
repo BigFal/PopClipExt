@@ -1,4 +1,7 @@
-set newWord to "{popclip text}"
+-- Process seletected string
+set oldWord to "{popclip text}"
+set theCmd to ("echo " & quoted form of oldWord & " | perl -pe " & quoted form of "s/[\\r\\n-]//g" as string)
+set newWord to do shell script theCmd
 set the clipboard to newWord
 tell application "Vietnam Dictionaries" to activate
 repeat
