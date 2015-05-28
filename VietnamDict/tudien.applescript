@@ -1,6 +1,5 @@
 -- Process seletected string
-set oldWord to "{popclip -
-text}"
+set oldWord to "{popclip text}"
 set theCmd to ("echo " & quoted form of oldWord & " | perl -pe " & quoted form of "s/-\\r\\n|-\\n|-\\r| +//g" as string)
 set newWord to do shell script theCmd
 set the clipboard to newWord
