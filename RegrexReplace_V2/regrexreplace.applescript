@@ -2,7 +2,7 @@ set selectedText to "{popclip text}"
 
 tell application "System Events" to set activeApp to name of first application process whose frontmost is true
 
-display dialog "Regular Expression Pattern" with title "Regrex Replace" default answer ""
+display dialog "Regular Expression Pattern" with title "Regrex Replace" default answer selectedText
 set theRegrex to (text returned of result)
 
 set the_results to (display dialog "All occurrences of [" & theRegrex & "] will be replaced by" with title "Regrex Replace" default answer "" buttons {"Cancel", "Within Entire Document", "Within Selected Range"} default button 2)
